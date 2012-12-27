@@ -17,7 +17,7 @@ encode([H|T], List) ->
 len([]) ->
    [];
 len([[H|T1]|T2]) ->
-   [{H, p04:len([H|T1])}, len(T2)].
+   [{H, p04:len([H|T1])}|len(T2)].
 
 
 
